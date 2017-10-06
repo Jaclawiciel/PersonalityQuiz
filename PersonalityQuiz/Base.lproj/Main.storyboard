@@ -245,15 +245,12 @@
                             <constraint firstItem="8nX-c5-JRS" firstAttribute="bottom" secondItem="Q4b-Rb-k7a" secondAttribute="bottom" constant="20" id="sNI-28-5pF"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="8nX-c5-JRS"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="OvX-Si-Vig"/>
-                                <exclude reference="Kcn-fT-H5w"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="M8J-Jp-6FW"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="Kcn-fT-H5w" id="ZBx-AI-3H4"/>
+                        <outlet property="rangedStackView" destination="RAn-eN-55h" id="dD1-WQ-KGv"/>
+                        <outlet property="singleStackView" destination="OvX-Si-Vig" id="jrG-Bd-2Bj"/>
                         <segue destination="8iY-PQ-kCJ" kind="show" identifier="ResultSegue" id="p5Q-P5-TRf"/>
                     </connections>
                 </viewController>
