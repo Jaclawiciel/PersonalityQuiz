@@ -10,6 +10,9 @@ import UIKit
 
 class ResultsViewController: UIViewController {
 
+    //MARK: Properties
+    var responses: [Answer]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
