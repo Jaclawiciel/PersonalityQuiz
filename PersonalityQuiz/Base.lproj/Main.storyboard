@@ -104,6 +104,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TuB-S0-1VD">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="uqd-pl-kW4" eventType="touchUpInside" id="UEH-CO-3ai"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YHu-Lc-RAv">
                                         <rect key="frame" x="0.0" y="50" width="46" height="30"/>
@@ -181,6 +184,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bty-nG-dYh">
                                         <rect key="frame" x="0.0" y="204" width="343" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="uqd-pl-kW4" eventType="touchUpInside" id="kvm-YL-Bs2"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -210,6 +216,9 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rpb-V5-PUC">
                                         <rect key="frame" x="0.0" y="90.5" width="343" height="30"/>
                                         <state key="normal" title="Submit Answer"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="uqd-pl-kW4" eventType="touchUpInside" id="Sjn-xY-DVL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -248,6 +257,10 @@
                     </view>
                     <navigationItem key="navigationItem" id="M8J-Jp-6FW"/>
                     <connections>
+                        <outlet property="multiSwitch1" destination="sjV-65-vRz" id="rWk-2d-o3i"/>
+                        <outlet property="multiSwitch2" destination="FTC-pd-gkd" id="swX-jw-Mdh"/>
+                        <outlet property="multiSwitch3" destination="a3y-5F-3NA" id="0Te-pI-njc"/>
+                        <outlet property="multiSwitch4" destination="uzb-0m-gIx" id="Qtc-DI-plm"/>
                         <outlet property="multipleLabel1" destination="xsD-d3-jiH" id="XPP-1p-w0C"/>
                         <outlet property="multipleLabel2" destination="qQl-pP-gCY" id="buR-bW-Jsw"/>
                         <outlet property="multipleLabel3" destination="EoN-85-AxR" id="5aE-Hc-GH2"/>
@@ -257,6 +270,7 @@
                         <outlet property="questionProgressView" destination="Q4b-Rb-k7a" id="Vp1-mf-ELD"/>
                         <outlet property="rangedLabel1" destination="gvc-kO-WAf" id="XNo-N3-Xz6"/>
                         <outlet property="rangedLabel2" destination="mqN-W1-fc8" id="C15-Xk-EBo"/>
+                        <outlet property="rangedSlider" destination="OTl-SZ-e30" id="B5d-Un-6dH"/>
                         <outlet property="rangedStackView" destination="RAn-eN-55h" id="dD1-WQ-KGv"/>
                         <outlet property="singleButton1" destination="TuB-S0-1VD" id="v1x-Qx-KPN"/>
                         <outlet property="singleButton2" destination="YHu-Lc-RAv" id="n6N-2r-w9Y"/>
